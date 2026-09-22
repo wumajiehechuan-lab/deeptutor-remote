@@ -1,0 +1,20 @@
+{
+  "schema": 2,
+  "_note": "启动器与 DeepTutor 两条轨道的更新清单。launcher.* 由 scripts/pack-launcher.py 生成；deeptutor.* 手工维护。发布走 scripts/publish.cmd（会把更新包一起推）。",
+  "launcher": {
+    "version": "0.2.0",
+    "released_at": "2026-09-22",
+    "notes": "新增「版本」面板：可查看当前版本、更新 DeepTutor 本体、以及更新启动器自身（带校验与回滚）。",
+    "zip_path": "launcher-0.2.0.zip",
+    "sha256": "0282c241f219431638a98df0b2063627f1352a60c73a732638d7d6457a3a1742",
+    "min_from": "0.1.0"
+  },
+  "deeptutor": {
+    "latest": "1.6.10",
+    "released_at": "2026-09-22",
+    "notes": "上游 1.6.10（含 1.6.9）：文档解析引擎回退修复、PDF 附件走已配置解析器、LightRAG 支持按角色分别配置模型、对话与学习面板若干改进。",
+    "extras": [
+      "rag-lightrag"
+    ]
+  }
+}
