@@ -2,11 +2,11 @@
   "schema": 2,
   "_note": "启动器与 DeepTutor 两条轨道的更新清单。launcher.* 由 scripts/pack-launcher.py 生成；deeptutor.* 手工维护。发布走 scripts/publish.cmd（会把更新包一起推）。",
   "launcher": {
-    "version": "0.2.0",
-    "released_at": "2026-09-22",
-    "notes": "新增「版本」面板：可查看当前版本、更新 DeepTutor 本体、以及更新启动器自身（带校验与回滚）。",
-    "zip_path": "launcher-0.2.0.zip",
-    "sha256": "aa77cedd6ddc8dfdffc3acca2f94c430bb2bdda738ec7f3aff4a2842907718df",
+    "version": "0.2.1",
+    "released_at": "2026-09-25",
+    "notes": "修复包内 agent 的 exec 找不到 python / pip：起子进程时注入自带的 Python 路径，并补齐 pip、pip3、python3 命令。",
+    "zip_path": "launcher-0.2.1.zip",
+    "sha256": "1a29a80888189ef33d739fec5690126049e4145f629e583609a98f78ecb8eb6c",
     "min_from": "0.1.0"
   },
   "deeptutor": {
